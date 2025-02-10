@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Выбор персонажа</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="characterSelect" class="screen">
+    <h1>Выберите персонажа</h1>
+    <div class="character-container">
+      <button class="arrow left-arrow">←</button>
+      <div class="character-preview">
+        <img id="characterImage" src="img/ork.png" alt="character">
+        <h2 id="characterName">Орк</h2>
+      </div>
+      <button class="arrow right-arrow">→</button>
+    </div>
+        <button id="selectButton">Выбрать</button>
+  </div>
+
+  <div id="mainScreen" class="screen hidden">
+    <div class="character-info">
+      <img id="selectedCharacterImage" src="" alt="selected character">
+      </div>
+      <div id="selectedCharacterStats" class="stats"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
